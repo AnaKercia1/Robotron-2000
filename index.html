@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Robotron 2000</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="modal__sucesso modal--hide">
+            <div class="modal__container">
+                <span class="modal__fechar">&times;</span>
+                <h2 class="modal__titulo">Produzindo seu Robotron, aguarde...</h2>
+                <img class="modal__loading" src="img/loading.gif" alt="gif de barra de loading">
+                <div class="modal__robo">
+                    <img src="" alt="Robotron criado" class="modal__imagem">
+                    <div class="modal__estatisticas"></div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <section class="robotron">
+                <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
+                <div class="robo">
+                    <img class="robo__imagem" src="img/robotron-amarelo.png" data-cor-robo alt="Robotron" id="robotron">
+                    <div class="robo__cores">
+                        <button class="robo__botao-cor" data-cor-ativa data-opcao-cor="amarelo" aria-label="altera cor do robô para amarelo"></button>
+                        <button class="robo__botao-cor" data-opcao-cor="azul" aria-label="altera cor do robô para azul"></button>
+                        <button class="robo__botao-cor" data-opcao-cor="branco" aria-label="altera cor do robô para branco"></button>
+                        <button class="robo__botao-cor" data-opcao-cor="preto" aria-label="altera cor do robô para preto"></button>
+                        <button class="robo__botao-cor" data-opcao-cor="rosa" aria-label="altera cor do robô para rosa"></button>
+                        <button class="robo__botao-cor" data-opcao-cor="vermelho" aria-label="altera cor do robô para vermelho"></button>
+                    </div>
+                </div>
+            </section>
+
+        <section class="box estatisticas">
+            <div class="estatistica">
+                <p class="estatistica-titulo">Força</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-stats="forca">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Poder</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-stats="poder">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Energia</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-stats="energia">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Velocidade</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-stats="velocidade">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipamentos">
+            <form action="" class="montador">
+                <div class="box montador-conteudo">
+                    <p class="montador-disponivel">Peças disponíveis: <span class="disponivel-valor" data-disponivel>0</span></p>
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Braços</label>
+                        <div class="controle"  data-peca="bracos">
+                            <buttom class="controle-ajuste" data-operacao="-">-</buttom>
+                            <input type="text" class="controle-contador" value="0" readonly data-quantidade> 
+                            <buttom class="controle-ajuste" data-operacao="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo" >Blindagem</label>
+                        <div class="controle" data-peca="blindagem">
+                            <buttom class="controle-ajuste" data-operacao="-">-</buttom>
+                            <input type="text" class="controle-contador" value="0" readonly data-quantidade> 
+                            <buttom class="controle-ajuste" data-operacao="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Núcleos</label>
+                        <div class="controle" data-peca="nucleos">
+                            <buttom class="controle-ajuste" data-operacao="-">-</buttom>
+                            <input type="text" class="controle-contador" value="0" readonly data-quantidade>
+                            <buttom class="controle-ajuste" data-operacao="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Pernas</label>
+                        <div class="controle" data-peca="pernas">
+                            <buttom class="controle-ajuste" data-operacao="-">-</buttom>
+                            <input type="text" class="controle-contador" value="0" readonly data-quantidade>
+                            <buttom class="controle-ajuste" data-operacao="+">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Foguetes</label>
+                        <div class="controle" data-peca="foguetes">
+                            <buttom class="controle-ajuste" data-operacao="-">-</buttom>
+                            <input type="text" class="controle-contador" value="0" readonly data-quantidade>
+                            <buttom class="controle-ajuste" data-operacao="+">+</buttom>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Iniciar produção" class="producao" id="producao">
+            </form>
+        </section>
+    </main>
+    <script src="Js/main.js"></script>
+</body>
+</html>
