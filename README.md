@@ -5,7 +5,7 @@
 
 ##### A terra está sofrendo uma ameaça alienígena e voçê foi desafiado a criar um Robotron e lutar pelo planeta. Para montar o seu robô, voçê irá adicionar peças as engrenagens e alterar suas estatísticas dinamicamente, tudo isso com JavaScript. Use sua imaginação e monte seu Robotron com cores e estatísticas de acordo com sua preferência. 
 
-## E aí, estão prontos para salvar o **Planeta Terra** dessa ameaça alienígena?
+## E aí, estão prontos para salvar o **Planeta** dessa ameaça alienígena?
 
 Esse projeto foi desenvolvido para aprimorar meus conhecimentos em JavaScript manipulando elementos, iteragindo com HTML e CSS, criando funções e operações.
 
