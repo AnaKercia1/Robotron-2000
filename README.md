@@ -1,5 +1,14 @@
 # Robotron-2000
-<img src="https://github.com/AnaKercia1/Robotron-2000/assets/123599474/df186d01-5e29-4e18-a989-583e06d2a4e8">
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Robotron 2000**
+| :label: Tecnologias | JavaScript, HTML5, CSS3
+| :rocket: URL         | https://robotron-2000-qsax8uhq6-anakercia1.vercel.app
+
+
+
+<img src="https://github.com/AnaKercia1/Robotron-2000/assets/123599474/df186d01-5e29-4e18-a989-583e06d2a4e8#vitrinedev">
 
 ## Projeto desenvolvido com cursos de JavaScript - Manipulando o DOM - ALURA
 
